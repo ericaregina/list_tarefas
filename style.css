@@ -1,0 +1,102 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Fonte moderna e legível */
+    display: flex; /* Torna o body um container flexível */
+    justify-content: center; /* Centraliza o conteúdo horizontalmente */
+    align-items: center; /* Centraliza o conteúdo verticalmente */
+    height: 100vh; /* Define a altura do body como 100% da altura da viewport */
+    margin: 0; /* Remove a margem padrão do body */
+    background-color: #f4f7f6; /* Cor de fundo suave para um visual mais limpo */
+}
+
+.container {
+    background-color: #ffffff; /* Cor de fundo branca para o contêiner */
+    border-radius: 12px; /* Bordas arredondadas para um visual mais suave */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15); /* Sombra mais pronunciada */
+    padding: 20px; /* Espaçamento interno do contêiner */
+    width: 360px; /* Largura fixa para o contêiner */
+    box-sizing: border-box; /* Inclui padding e border na largura total do contêiner */
+    max-width: 100%; /* Garante que o contêiner não ultrapasse a largura da tela em dispositivos móveis */
+    background: linear-gradient(145deg, #ffffff, #f0f0f0); /* Gradiente suave para um efeito de profundidade */
+}
+
+h1 {
+    font-size: 28px; /* Tamanho da fonte maior para destaque do título */
+    margin-bottom: 20px; /* Espaçamento abaixo do título */
+    color: #333; /* Cor do texto mais escura para melhor contraste */
+    font-weight: 600; /* Peso da fonte mais forte para o título */
+}
+
+input[type="text"] {
+    width: calc(100% - 24px); /* Ajusta a largura do campo de entrada para incluir o padding e a borda do botão ao lado */
+    padding: 12px 15px; /* Maior espaçamento interno no campo de entrada */
+    margin-right: 10px; /* Espaçamento à direita do campo de entrada para separar do botão */
+    border: 2px solid #007bff; /* Borda azul para o campo de entrada */
+    border-radius: 8px; /* Bordas arredondadas no campo de entrada */
+    font-size: 16px; /* Tamanho da fonte no campo de entrada */
+    outline: none; /* Remove a borda de foco padrão do navegador */
+    transition: border-color 0.3s, box-shadow 0.3s; /* Transições suaves para a cor da borda e a sombra */
+}
+
+input[type="text"]:focus {
+    border-color: #0056b3; /* Muda a cor da borda para azul escuro quando o campo está em foco */
+    box-shadow: 0 0 8px rgba(0, 91, 174, 0.3); /* Adiciona uma sombra ao redor do campo de entrada quando em foco */
+}
+
+button {
+    padding: 12px 20px; /* Maior espaçamento interno no botão */
+    border: none; /* Remove a borda padrão do botão */
+    border-radius: 8px; /* Bordas arredondadas no botão */
+    background-color: #28a745; /* Cor de fundo verde para o botão */
+    color: #ffffff; /* Cor do texto do botão em branco */
+    font-size: 16px; /* Tamanho da fonte no botão */
+    cursor: pointer; /* Muda o cursor para uma mãozinha ao passar sobre o botão */
+    transition: background-color 0.3s, transform 0.3s; /* Transições suaves para a cor de fundo e transformação */
+}
+
+button:hover {
+    background-color: #218838; /* Cor de fundo verde escura ao passar o mouse sobre o botão */
+    transform: scale(1.05); /* Leve aumento de tamanho ao passar o mouse sobre o botão */
+}
+
+ul {
+    list-style-type: none; /* Remove os marcadores padrão dos itens da lista */
+    padding: 0; /* Remove o padding padrão da lista */
+    margin: 0; /* Remove a margem padrão da lista */
+}
+
+li {
+    background-color: #ffffff; /* Cor de fundo clara para os itens da lista */
+    border: 1px solid #ddd; /* Borda cinza clara ao redor dos itens da lista */
+    border-radius: 8px; /* Bordas arredondadas para os itens da lista */
+    margin: 10px 0; /* Margem maior entre os itens da lista */
+    padding: 12px; /* Maior espaçamento interno nos itens da lista */
+    display: flex; /* Torna os itens da lista containers flexíveis */
+    justify-content: space-between; /* Distribui o conteúdo dos itens com espaço igual entre os itens */
+    align-items: center; /* Alinha o conteúdo dos itens verticalmente no centro */
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1); /* Sombra suave para os itens da lista */
+    transition: background-color 0.3s, transform 0.3s; /* Transições suaves para a cor de fundo e transformação */
+}
+
+li:hover {
+    background-color: #f1f1f1; /* Cor de fundo ligeiramente mais escura ao passar o mouse sobre os itens da lista */
+    transform: scale(1.02); /* Leve aumento de tamanho ao passar o mouse sobre os itens da lista */
+}
+
+li.completed {
+    text-decoration: line-through; /* Adiciona uma linha através do texto para indicar tarefas concluídas */
+    color: #888; /* Cor do texto cinza para tarefas concluídas */
+}
+
+.remove-btn {
+    background: none; /* Remove o fundo do botão */
+    border: none; /* Remove a borda padrão do botão */
+    color: #dc3545; /* Cor vermelha para o botão de remoção */
+    font-size: 18px; /* Tamanho da fonte do botão de remoção */
+    cursor: pointer; /* Muda o cursor para uma mãozinha ao passar sobre o botão */
+    transition: color 0.3s, transform 0.3s; /* Transições suaves para a cor e transformação */
+}
+
+.remove-btn:hover {
+    color: #c82333; /* Cor vermelha mais escura ao passar o mouse sobre o botão de remoção */
+    transform: scale(1.2); /* Leve aumento de tamanho ao passar o mouse sobre o botão de remoção */
+}
